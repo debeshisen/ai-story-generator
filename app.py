@@ -11,7 +11,7 @@ from docx import Document
 # Load environment variables
 load_dotenv()
 
-API_KEY = os.getenv("API_KEY")
+API_KEY = st.secrets["API_KEY"]
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
     "HTTP-Referer": "localhost",
